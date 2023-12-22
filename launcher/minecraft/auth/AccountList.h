@@ -111,11 +111,7 @@ public:
     bool anyAccountIsValid();
     bool drmCheck()
     {
-#ifdef LAUNCHER_STRICT_DRM
-        return anyAccountIsValid();
-#else
         return true;
-#endif
     }
 
     bool isActive() const;
